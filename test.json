@@ -1,0 +1,44 @@
+{
+  "coord": {
+    "lon": 54.3675,
+    "lat": 31.8972
+  },
+  "weather": [
+    {
+      "id": 800,
+      "main": "Clear",
+      "description": "clear sky",
+      "icon": "01n"
+    }
+  ],
+  "base": "stations",
+  "main": {
+    "temp": 14.4,
+    "feels_like": 13.23,
+    "temp_min": 14.4,
+    "temp_max": 14.4,
+    "pressure": 1014,
+    "humidity": 51,
+    "sea_level": 1014,
+    "grnd_level": 868
+  },
+  "visibility": 10000,
+  "wind": {
+    "speed": 4.99,
+    "deg": 332,
+    "gust": 6.66
+  },
+  "clouds": {
+    "all": 0
+  },
+  "dt": 1742760500,
+  "sys": {
+    "country": "IR",
+    "sunrise": 1742696555,
+    "sunset": 1742740534
+  },
+  "timezone": 12600,
+  "id": 111822,
+  "name": "Yazd",
+  "cod": 200
+}
