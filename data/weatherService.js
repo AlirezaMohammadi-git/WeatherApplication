@@ -1,5 +1,7 @@
 
-const apiKey = '1c651ed08ee9c16390640ac036fff414'
+
+import { apiKey } from "../localVriables.js";
+
 const baseURL = 'https://api.openweathermap.org/data/2.5/weather'
 // metric = Centigrade
 // by default it's fahrenheit
