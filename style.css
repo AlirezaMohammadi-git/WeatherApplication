@@ -26,7 +26,6 @@ body {
 .app-container {
   border-radius: 12px;
   width: 30vw;
-  height: 80vh;
   background-image: linear-gradient(135deg, #00feba, #5b548a);
   position: absolute;
   top: 50%;
@@ -35,7 +34,36 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  box-shadow: 5px 5px 40px 0px rgb(0, 0, 0);
+  height: fit-content;
+  transition: 1s;
+  overflow: hidden;
+  /* Ensures content doesn't overflow during transition */
 }
+
+.app-container:hover {
+  transform: translate(-50%, -50%) scale(1.05);
+}
+
+.js-weather-details {
+  display: flex;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  display: flex;
+  padding: 3.2rem 3.5rem;
+  transition: 1s;
+}
+
+/* State when the weather details are visible */
+.js-weather-details.visible {
+  transform: scale(1);
+  visibility: visible;
+  transition: scale 0.5s ease-in-out;
+}
+
+
 
 /*----------- search feature -----------*/
 .search_location_input {
@@ -53,8 +81,20 @@ body {
   justify-content: center;
   align-items: center;
   margin-top: 3.2rem;
-  margin-bottom: 1.6rem;
   gap: 8px;
+  position: relative;
+}
+
+.invalid-text {
+  position: absolute;
+  left: 20%;
+  top: 105%;
+  content: 'invalid city';
+  font-size: .9rem;
+  font-weight: lighter;
+  color: red;
+  z-index: -1;
+  transition: 1s;
 }
 
 .search_location_input {
@@ -104,7 +144,7 @@ body {
 /*----------- Weather Extra informations -----------*/
 
 .additional_info_container {
-  margin-top: 6.4rem;
+  margin-top: 3.2rem;
   width: 60%;
   display: flex;
   justify-content: space-between;

@@ -17,37 +17,42 @@
       <!-- Search feature -->
       <div class="search_container">
         <input class="search_location_input js-search-location-input" type="text" placeholder="Search location">
+        <div class="invalid-text"></div>
         <div class="search_icon_container js-search-btn">
           <img class="search_icon" src="images/search.png" alt="search">
         </div>
       </div>
 
-      <!-- Weather condition image -->
-      <img class="weather_condition_img js-weather-icon" src="https://openweathermap.org/img/wn/10d@2x.png" alt="">
 
-      <!-- Weather Main Informations -->
-      <h2 class="temperture_text js-temperture-text">22°C</h2>
-      <h3 class="weather_location_name js-city">New York</h3>
+      <div class="js-weather-details">
+        <!-- Weather condition image -->
+        <img class="weather_condition_img js-weather-icon" src="https://openweathermap.org/img/wn/10d@2x.png" alt="">
+
+        <!-- Weather Main Informations -->
+        <h2 class="temperture_text js-temperture-text">22°C</h2>
+        <h3 class="weather_location_name js-city">New York</h3>
 
 
-      <!-- Weather Extra informations -->
-      <div class="additional_info_container">
-        <div class="humidity_container">
-          <div class="ext_visual">
-            <img class="ext_icon" src="images/humidity.png" alt="">
-            <h4 class="ext_normal_text js-humidity">64%</h4>
+        <!-- Weather Extra informations -->
+        <div class="additional_info_container">
+          <div class="humidity_container">
+            <div class="ext_visual">
+              <img class="ext_icon" src="images/humidity.png" alt="">
+              <h4 class="ext_normal_text js-humidity">64%</h4>
+            </div>
+            <p class="ext_small_text">Humidity</p>
           </div>
-          <p class="ext_small_text">Humidity</p>
-        </div>
-        <div class="wind_speed_container">
-          <div class="ext_visual">
-            <img class="ext_icon" src="images/wind.png" alt="">
-            <h4 class="ext_normal_text js-wind-speed">76km/h</h4>
+          <div class="wind_speed_container">
+            <div class="ext_visual">
+              <img class="ext_icon" src="images/wind.png" alt="">
+              <h4 class="ext_normal_text js-wind-speed">76km/h</h4>
+            </div>
+            <p class="ext_small_text">wind Speed</p>
           </div>
-          <p class="ext_small_text">wind Speed</p>
-        </div>
 
+        </div>
       </div>
+
 
 
     </div>
